@@ -1,3 +1,6 @@
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
 # Proyecto de Clasificación "Piedra, Papel o Tijera"
 
 Este proyecto implementa una aplicación interactiva utilizando Streamlit y un modelo de Deep Learning (Keras/TensorFlow) para clasificar imágenes de manos haciendo los gestos de Piedra, Papel o Tijera. Está diseñado bajo las mejores prácticas del ciclo de vida de Machine Learning para un Ingeniero de Datos y Especialista en Machine Learning.
