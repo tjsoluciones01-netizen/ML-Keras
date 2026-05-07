@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page para el modelo de clasificación de Piedra, Papel o Tijera">
+    <title>Piedra, Papel o Tijera AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Piedra, Papel o Tijera AI</h1>
+            <p>Descubre cómo un modelo de Machine Learning interpreta comandos visuales en tiempo real usando Redes Neuronales Convolucionales.</p>
+            <a href="#app-instructions" class="cta-button">Ir a la Aplicación</a>
+        </div>
+    </header>
+
+    <!-- Project Details Section -->
+    <section class="section" id="details">
+        <h2 class="section-title">Sobre el Proyecto</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>📌 El Problema</h3>
+                <p>En el desarrollo de sistemas de interacción humano-computadora, el reconocimiento de gestos es un desafío fundamental. El clásico juego de "Piedra, Papel o Tijera" sirve como un excelente caso de estudio para entrenar modelos de visión computacional que puedan interpretar comandos visuales en tiempo real y traducirlos en acciones concretas.</p>
+            </div>
+            
+            <div class="card">
+                <h3>🎯 El Objetivo</h3>
+                <p>El objetivo principal de esta aplicación es demostrar cómo se puede desplegar un modelo de Machine Learning (previamente entrenado) utilizando una interfaz web amigable. Esto permite acercar la Inteligencia Artificial al usuario final, permitiéndole interactuar directamente con el modelo a través de imágenes subidas o la cámara de su dispositivo.</p>
+            </div>
+            
+            <div class="card">
+                <h3>⚙️ Funcionalidad</h3>
+                <p>Esta aplicación carga un modelo neuronal profundo (formato <code>.h5</code> de Keras/TensorFlow). Toma una imagen, la redimensiona a 224x224 píxeles, la normaliza y luego extrae las características visuales para calcular las probabilidades de que la imagen pertenezca a una de las tres clases: Piedra, Papel o Tijera.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ML Lifecycle Section -->
+    <section class="section">
+        <h2 class="section-title">Ciclo de Vida del Desarrollo</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fase</th>
+                        <th>Descripción en este Proyecto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Business Understanding</strong></td>
+                        <td>Definición del objetivo: Reconocer gestos manuales para el juego de Piedra, Papel o Tijera.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Data Acquisition</strong></td>
+                        <td>Recolección y etiquetado de cientos de imágenes de manos realizando los gestos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Modeling</strong></td>
+                        <td>Entrenamiento de una Red Neuronal Convolucional (CNN) usando Teachable Machine / Keras.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Deployment</strong></td>
+                        <td>Empaquetado del modelo y exposición a través de una aplicación local en <strong>Streamlit</strong>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- App Execution Instructions -->
+    <section class="section" id="app-instructions">
+        <h2 class="section-title">🚀 ¡Prueba el Modelo!</h2>
+        <div class="card" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                La inferencia en tiempo real se ejecuta a través de nuestra aplicación en Python (Streamlit). 
+                Para iniciarla, abre tu terminal en la carpeta del proyecto y ejecuta:
+            </p>
+            <div style="background: #0f172a; padding: 1.5rem; border-radius: 8px; font-family: monospace; color: #10b981; font-size: 1.2rem; margin-bottom: 2rem;">
+                streamlit run app.py
+            </div>
+            <p>Se abrirá automáticamente en tu navegador la aplicación interactiva donde podrás usar tu cámara web o subir imágenes.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Desarrollado con pasión por la IA</p>
+        <p class="developer">@iacam360</p>
+        <p style="font-size: 0.9rem; margin-top: 1rem; color: #64748b;">Data Engineer & Machine Learning Specialist</p>
+    </footer>
+
+</body>
+</html>
